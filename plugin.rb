@@ -13,7 +13,8 @@ class OmniAuth::Strategies::QQConnect < OmniAuth::Strategies::OAuth2
   option :client_options, {
                           :site => 'https://graph.qq.com/oauth2.0/',
                           :authorize_url => '/oauth2.0/authorize',
-                          :token_url => "/oauth2.0/token"
+                          :token_url => "/oauth2.0/token",
+                          :callback_url => "http://bbs.sanwu.org/connect.php"
                         }
 
   option :token_params, {
